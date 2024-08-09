@@ -1,4 +1,3 @@
-import React from "react";
 import { GlobalStyle, Start, Titulo } from "./Inicio.styles";
 
 const Inicio = () => {

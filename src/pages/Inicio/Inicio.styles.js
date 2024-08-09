@@ -27,13 +27,13 @@ export const Titulo = styled.div`
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 20vh; /* Ajusta según sea necesario */
+  height: 20vh;
 
   h1 {
     color: red;
     font-size: 6rem;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1); /* Sombra blanca */
-    margin: 0; /* Elimina el margen por defecto del h1 */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+    margin: 0;
   }
 `;
 
@@ -42,17 +42,17 @@ export const Start = styled.div`
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 60vh; /* Ajusta según sea necesario */
+  height: 60vh;
 
   a {
-    text-decoration: none; /* Elimina subrayado del enlace */
+    text-decoration: none;
   }
 
   h1 {
     color: red;
     font-size: 6rem;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1); /* Sombra blanca */
-    cursor: pointer; /* Hace que el cursor cambie a puntero */
-    margin: 0; /* Elimina el margen por defecto del h1 */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    margin: 0;
   }
 `;
