@@ -9,7 +9,7 @@ Vas a poder buscar y visualizar los personajes de la API de Rick y Morty. La apl
 
 Puedes ver una demostración en vivo de la aplicación clicando en la imagen: 
 
-[![Captura de Pantalla](src/assets/Captura.PNG)](https://api-rick-morty-theta.vercel.app)
+
 
 
 
