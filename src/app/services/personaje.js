@@ -2,7 +2,7 @@ import instance from "./api";
 
 export const getPersonajes = async (page = 1) => {
   if (page > 42) {
-    return []; // Si la página está fuera del rango, devuelve un array vacío.
+    return [];
   }
 
   try {

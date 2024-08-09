@@ -22,7 +22,14 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
-// export const Titulo = styled.div`
+export const Titulo = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 20vh;
+  // export const Titulo = styled.div
+`;
 //   display: flex;
 //   align-items: center;
 //   justify-content: center;
@@ -45,14 +52,14 @@ export const Start = styled.div`
   height: 100vh; /* Ajusta según sea necesario */
 
   a {
-    text-decoration: none; /* Elimina subrayado del enlace */
+    text-decoration: none;
   }
 
   h1 {
     color: red;
     font-size: 6rem;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1); /* Sombra blanca */
-    cursor: pointer; /* Hace que el cursor cambie a puntero */
-    margin: 0; /* Elimina el margen por defecto del h1 */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    margin: 0;
   }
 `;
