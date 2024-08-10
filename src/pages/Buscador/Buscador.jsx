@@ -14,9 +14,9 @@ import {
 } from "./Buscador.styles";
 
 const Buscador = () => {
-  const [personajes, setPersonajes] = useState([]);
+  const [characters, setCharacters] = useState([]);
   const [filteredPersonajes, setFilteredPersonajes] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchCharacter, setSearchCharacter] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [charactersPerPage] = useState(6);
   const [totalPages, setTotalPages] = useState(1);
@@ -34,7 +34,7 @@ const Buscador = () => {
         page += 1;
       } while (fetchedCharacters.length > 0);
 
-      setPersonajes(allPersonajes);
+      setCharacters(allPersonajes);
       setFilteredPersonajes(allPersonajes);
       setTotalPages(Math.ceil(allPersonajes.length / charactersPerPage));
     };
@@ -43,16 +43,16 @@ const Buscador = () => {
   }, [charactersPerPage]);
 
   useEffect(() => {
-    if (searchTerm === "") {
-      setFilteredPersonajes(personajes);
+    if (searchCharacter === "") {
+      setFilteredPersonajes(characters);
     } else {
-      const filtered = personajes.filter((personaje) =>
-        personaje.name.toLowerCase().includes(searchTerm.toLowerCase())
+      const filtered = characters.filter((personaje) =>
+        personaje.name.toLowerCase().includes(searchCharacter.toLowerCase())
       );
       setFilteredPersonajes(filtered);
     }
     setCurrentPage(1);
-  }, [searchTerm, personajes]);
+  }, [searchCharacter, characters]);
 
   const handleCardClick = async (id) => {
     if (!flippedCards[id]) {
@@ -108,8 +108,8 @@ const Buscador = () => {
         <SearchInput
           type="text"
           placeholder="Buscar personajes..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
+          value={searchCharacter}
+          onChange={(e) => setSearchCharacter(e.target.value)}
         />
         <Content>
           {currentCharacters.map((personaje) => (
